@@ -7,7 +7,7 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false })
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import { aboutImg } from "../../data/onePage"
+import { aboutImg } from "../../data/mock-data"
 
 export default function AboutSlider() {
     const settings = {
