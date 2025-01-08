@@ -44,10 +44,10 @@ export default function NavOnePage(){
             <div className="container">
                 <Link className="logo" href="/">
                     <span className="logo-light-mode">
-                        <Image src="/images/logo-dark.png" width={110} height={30} className="l-dark" alt=""/>
-                        <Image src='/images/logo-light.png' width={110} height={30} className="l-light" alt=""/>
+                        <Image src="/images/eh-logo2.png" width={110} height={130} className="l-dark" alt=""/>
+                        <Image src='/images/eh-logo2.png' width={110} height={130} className="l-light" alt=""/>
                     </span>
-                    <Image src='/images/logo-light.png' width={110} height={30} className="logo-dark-mode" alt=""/>
+                    <Image src='/images/eh-logo2.png' width={110} height={130} className="logo-dark-mode" alt=""/>
                 </Link>
                 <div className="menu-extras">
                     <div className="menu-item">
@@ -63,9 +63,9 @@ export default function NavOnePage(){
 
                 <ul className="buy-button list-inline mb-0">                    
                     <li className="list-inline-item ps-1 mb-0">
-                        <Link href="https://1.envato.market/starty-next" target="_blank">
+                        <Link1 to="download" spy={true} smooth={true} duration={500} target="_blank">
                             <div className="btn btn-primary">Download</div>
-                        </Link>
+                        </Link1>
                     </li>
                 </ul>
         
@@ -75,10 +75,13 @@ export default function NavOnePage(){
                             <Link1 to="home" spy={true} smooth={true} duration={500} activeClass="active">Home</Link1>
                         </li>
                         <li className="has-submenu">
-                            <Link1 to="services" spy={true} smooth={true} duration={500} activeClass="active">Features</Link1>
+                            <Link1 to="Features" spy={true} smooth={true} duration={500} activeClass="active">Features</Link1>
                         </li>
                         <li className="has-submenu">
-                            <Link1 to="review" spy={true} smooth={true} duration={500} activeClass="active">Review</Link1>
+                            <Link1 to="Pricing" spy={true} smooth={true} duration={500} activeClass="active">Pricing</Link1>
+                        </li>
+                        <li className="has-submenu">
+                            <Link1 to="Faq" spy={true} smooth={true} duration={500} activeClass="active">Faq</Link1>
                         </li>
                         <li className="has-submenu">
                             <Link1 to="contact" spy={true} smooth={true} duration={500} activeClass="active">Contact</Link1>
