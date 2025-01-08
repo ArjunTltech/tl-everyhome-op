@@ -16,6 +16,7 @@ import styles from './assets/css/service.module.css';
 import { MdArrowForward, AiOutlineCheckCircle, FiArrowRight } from './assets/icons/vander'
 
 import { featureData } from "./data/mock-data";
+import Pricing from "./components/pricing";
 
 export default function IndexOnePage() {
     return (
@@ -61,10 +62,8 @@ export default function IndexOnePage() {
 
             <section className="section overflow-hidden pb-0" id="services">
 
-
-
                 {/* about section */}
-                <div className="container mt-100 mt-60">
+                <div className="container mt-100 mt-60" id="about">
                     <div className="row align-items-center">
                         <div className="col-lg-5 col-md-6 order-md-1 order-2 mt-4 mt-am-0 pt-2 pt-sm-0">
                             <AboutSlider />
@@ -92,14 +91,15 @@ export default function IndexOnePage() {
                     </div>
                 </div>
 
+                {/*End about section */}
 
 
                 {/* Services Section */}
-                <div className={`container ${styles.servicesSection}`} style={{ cursor: "pointer" }}>
+                <div className={`container ${styles.servicesSection}`} style={{ cursor: "pointer" }} id="Services">
                     <div className="row justify-content-center">
                         <div className="col-12 text-center">
                             <div className="section-title mb-4 pb-2">
-                                <h3 className="title mb-4 text-primary">
+                                <h3 className="title mb-4 ">
                                     Check Out Our Services
                                 </h3>
                             </div>
@@ -143,21 +143,21 @@ export default function IndexOnePage() {
 
                 {/*End Services Section */}
 
-
-                <div className="container mt-100 mt-60">
+                {/* Feature Section */}
+                <div className="container mt-100 mt-60" id="Features">
                     <div className="row align-items-lg-center align-items-end">
                         <div className="col-md-6">
                             <div className="section-title mb-4 pb-2">
-                                <h4 className="title mb-4">Designed & Built by the <br /> latest code integration</h4>
-                                <p className="text-muted para-desc mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+                                <h4 className="title mb-4">Discover Innovative Features <br /> Built for Modern Living</h4>
+                                <p className="text-muted para-desc mb-0">Smart solutions tailored to bring ease, efficiency, and seamless management to your life</p>
 
                                 <ul className="list-unstyled mb-0">
                                     <li className="d-flex mt-4">
                                         <AiOutlineCheckCircle className="align-middle text-primary h5 mt-1" />
 
                                         <div className="flex-1 ms-3">
-                                            <h6 className="mb-0">Buy, sell, and trade on the go</h6>
-                                            <p className="text-muted mt-2 mb-0">Manage your holdings from your mobile device</p>
+                                            <h6 className="mb-0">Book Trusted Services</h6>
+                                            <p className="text-muted mt-2 mb-0">Discover and hire professionals with ease.</p>
                                         </div>
                                     </li>
 
@@ -165,15 +165,41 @@ export default function IndexOnePage() {
                                         <AiOutlineCheckCircle className="align-middle text-primary h5 mt-1" />
 
                                         <div className="flex-1 ms-3">
-                                            <h6 className="mb-0">Take control of your wealth</h6>
-                                            <p className="text-muted mt-2 mb-0">Rest assured you (and only you) have access to your funds</p>
+                                            <h6 className="mb-0"> Integrated Calendar</h6>
+                                            <p className="text-muted mt-2 mb-0">Manage all your appointments in one place.</p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mt-4">
+                                        <AiOutlineCheckCircle className="align-middle text-primary h5 mt-1" />
+
+                                        <div className="flex-1 ms-3">
+                                            <h6 className="mb-0">  Location Services</h6>
+                                            <p className="text-muted mt-2 mb-0"> Find nearby service providers quickly and easily.</p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mt-4">
+                                        <AiOutlineCheckCircle className="align-middle text-primary h5 mt-1" />
+
+                                        <div className="flex-1 ms-3">
+                                            <h6 className="mb-0">   Real-Time Notifications</h6>
+                                            <p className="text-muted mt-2 mb-0"> Get timely updates on bookings and schedules.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mt-4">
+                                        <AiOutlineCheckCircle className="align-middle text-primary h5 mt-1" />
+
+                                        <div className="flex-1 ms-3">
+                                            <h6 className="mb-0">   User-Friendly Design</h6>
+                                            <p className="text-muted mt-2 mb-0">  Navigate the app seamlessly with its intuitive interface.
+                                            </p>
                                         </div>
                                     </li>
                                 </ul>
 
-                                <div className="mt-4">
+                                {/* <div className="mt-4">
                                     <Link href="#" className="btn btn-primary">Download Now</Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -184,29 +210,32 @@ export default function IndexOnePage() {
                         </div>
                     </div>
                 </div>
+                {/*End Feature Section */}
+
             </section >
 
 
-            <section className="section" style={{ backgroundImage: "url('/images/bg/app-counter.jpg')" }}>
-                <div className="bg-overlay bg-gradient-primary opacity-9"></div>
-                <div className="container">
-                    <Counter />
-                </div>
-            </section>
-
-
-            {/* Testimonial section  */}
             <section className={`section  pb-0 pt-2 md:pt-5 ${styles.servicesSection}`} id="review">
-                <div className="container">
+
+                {/*  FAQ section  */}
+                <div className="container mt-100 mt-60 " id="Faq" >
+                    <Faq />
+                </div>
+                {/* End FAQ section  */}
+
+
+                {/* Testimonial section  */}
+                {/* 
+                <div className="container mt-100 mt-60" id="Testimonial">
                     <div className="row justify-content-center">
                         <div className="col-12 text-center">
                             <div className="section-title mb-4 pb-2">
                                 <h4 className="title mb-4">
                                     See What Our Users
-                                    {/* Space on medium and above */}
-                                    <span className="d-none d-md-inline"> </span> 
-                                    {/* Break only on small screens */}
-                                    <span className="d-md-none"><br /></span> 
+                                  
+                                    <span className="d-none d-md-inline"> </span>
+                             
+                                    <span className="d-md-none"><br /></span>
                                     Are Saying
                                 </h4>
                                 <p className="text-muted para-desc mb-0 mx-auto">
@@ -217,18 +246,52 @@ export default function IndexOnePage() {
                     </div>
                     <ClientOne />
                 </div>
-                <div className="container mt-100 mt-60">
-                    <Faq />
+       */}
+
+            </section>
+
+            <Pricing/>
+
+            {/* Testimonial Section */}
+            <section className="section mt-100 mt-50" style={{ backgroundImage: "url('')" }}>
+                <div className="bg-overlay bg-gradient-primary opacity-9"></div>
+                <div className="container">
+                    <div className="container mt-100 mt-60" id="Testimonial">
+                        <div className="row justify-content-center">
+                            <div className="col-12 text-center">
+                                <div className="section-title mb-4 pb-2">
+                                    <h4 className="title mb-4 text-white">
+                                        See What Our Users
+                                        {/* Space on medium and above */}
+                                        <span className="d-none d-md-inline"> </span>
+                                        {/* Break only on small screens */}
+                                        <span className="d-md-none"><br /></span>
+                                        Are Saying
+                                    </h4>
+                                    <p className=" para-desc mb-0 mx-auto" style={{ color: "#d1d1d1" }}>
+                                        Join thousands who’ve simplified their lives with EveryHome.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <ClientOne />
+                    </div>
                 </div>
             </section>
 
-            {/* End Testimonial section  */}
+            {/*End Testimonial Section */}
 
-            <section className="section" id="contact">
+
+
+            {/* download section */}
+            <section className="section" id="download">
                 <div className="container mt-100 mt-60">
                     <MobileApp />
                 </div>
             </section>
+            {/*End download section */}
+
             <Footer />
             <ScrollTop />
         </>

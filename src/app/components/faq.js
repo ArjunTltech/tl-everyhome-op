@@ -7,62 +7,63 @@ export default function Faq(){
     let accordionData = [
         {
             id:1,
-            title:'How does it work ?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' What services can I book through EveryHome?',
+            desc:'You can book services ranging from household maintenance to business support, covering a variety of needs'
         },
         {
             id:2,
-            title:'Do I need a designer to use Starty ?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:'How do I track my tasks in the app?',
+            desc:'Use the task management feature to organize, assign, and monitor your tasks seamlessly within the app.'
         },
         {
             id:3,
-            title:'What do I need to do to start selling ?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' Is EveryHome free to use?',
+            desc:' Yes, we offer a free basic plan, with premium options available for advanced features and additional benefits.'
         },
         {
             id:4,
-            title:'Does CMR offer relocation assistance?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:'What makes EveryHome different from other service platforms?',
+            desc:' EveryHome combines convenience, variety, and reliability, offering tailored services for both individual and business needs.'
         },
         {
             id:5,
-            title:'How is management perceived at CMR?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' How secure is my personal information on EveryHome?',
+            desc:'We prioritize your privacy with industry-standard encryption, ensuring your data is safe and secure.'
         },
         {
             id:6,
-            title:'How is the work/life balance at CMR?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' How does EveryHome handle refunds?',
+            desc:'EveryHome does not process payments or refunds directly. All financial transactions, including refunds, are handled between the customer and the service provider. Please contact the service provider directly for any refund-related concerns.'
         },
         {
             id:7,
-            title:'What is the salary like at CMR?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' Can I book services for multiple locations at once?',
+            desc:'Yes, our multi-location booking feature allows you to manage services across different addresses with ease.'
         },
         {
             id:8,
-            title:'What is a typical working day like at CMR?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' What types of professionals are available on EveryHome?',
+            desc:'We partner with certified and verified professionals for services like cleaning, repairs, business support, and more.'
         },
         {
             id:9,
-            title:'What is a typical working day like at CMR?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' How do I cancel or reschedule a booking?',
+            desc:'You can cancel or reschedule directly through the app, based on the service provider’s cancellation policy.'
         },
         {
             id:10,
-            title:'What are working conditions like at CMR?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' Does EveryHome offer eco-friendly service options?',
+            desc:'Yes, we provide eco-conscious alternatives for many services, such as green cleaning and energy-efficient repairs.'
         },
     ]
+
     return(
         <>
         <div className="row justify-content-center">
             <div className="col-12">
                 <div className="section-title mb-4 pb-2 text-center">
-                    <h4 className="title mb-3">Frequently Asked Questions</h4>
-                    <p className="text-muted mx-auto para-desc mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                    <h4 className="title mb-3 ">Have Questions? We’ve Got Answers!</h4>
+                    <p className="text-muted mx-auto para-desc mb-0">Your guide to everything you need to know about EveryHome.</p>
                 </div>
             </div>
         </div>

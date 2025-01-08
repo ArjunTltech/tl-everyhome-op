@@ -14,11 +14,11 @@ export default function MobileApp(){
 
             <div className="col-lg-7 col-md-7 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <div className="section-title ms-lg-5">
-                    <h4 className="title mb-4">Available for your <br/> Smartphones</h4>
-                    <p className="text-muted para-desc mb-0">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
+                    <h4 className="title mb-4">Get EveryHome on  Your Device Today</h4>
+                    <p className="text-muted para-desc mb-0">Streamline your life with just a few taps.Discover ease and convenience at your fingertips</p>
                     <div className="my-4">
-                        <Link href="#" className="btn btn-lg btn-dark mt-2 me-2"><BsApple/> App Store</Link>
-                        <Link href="#" className="btn btn-lg btn-dark mt-2">Play Store <FaGooglePlay/></Link>
+                        <Link href="#" className="btn btn-lg btn-dark mt-2 me-2"><BsApple/> App Store for iOS </Link>
+                        <Link href="#" className="btn btn-lg btn-dark mt-2">Google Play for Android  <FaGooglePlay/></Link>
                     </div>
 
                     <div className="d-inline-block">
@@ -26,7 +26,7 @@ export default function MobileApp(){
                             <FiSmartphone className="fea icon-md me-2 text-primary"/>
                             <div className="content">
                                 <h6 className="mb-0">Install app now on your cellphones</h6>
-                                <Link href="#" className="text-primary">Learn More <MdKeyboardArrowRight/></Link> 
+                                <Link href="#" className="text-primary">Discover More <MdKeyboardArrowRight/></Link> 
                             </div>
                         </div>
                     </div>

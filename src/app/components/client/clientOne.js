@@ -42,18 +42,18 @@ export default function ClientOne({ bgWhite }) {
 
     const clientsData = [
         {
-            image: '/images/client/01.jpg',
+            image: '/images/person.png',
             name: 'Ramesh P',
             desc: `Finding local service providers has never been this easy. EveryHome is a lifesaver!`
         },
         {
-            image: '/images/client/02.jpg',
+            image: '/images/person-lady.png',
             name: 'Priya S',
             desc: `Managing my appointments and tasks is now effortless. Highly recommend it!`
         },
         {
             image: '/images/person.png',
-            name: 'Sibin Thomas',
+            name: 'Roshan',
             desc: `EveryHome helped me organize my home projects seamlessly. I can’t imagine going back!`
         }
     ];
@@ -74,8 +74,8 @@ export default function ClientOne({ bgWhite }) {
                                         className="img-fluid avatar avatar-small rounded-circle mx-auto shadow" 
                                         alt=""
                                     />
-                                    <p className="text-muted mt-4">{item.desc}</p>
-                                    <h6 className="text-primary">- {item.name}</h6>
+                                    <p className=" mt-4" style={{ color: "#d1d1d1" }}>{item.desc}</p>
+                                    <h6 className="text-white">- {item.name}</h6>
                                 </div>
                             </div>
                         </div>
