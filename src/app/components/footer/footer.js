@@ -8,6 +8,10 @@ import {
   BiLogoFacebook,
   AiOutlineInstagram,
   IoIosArrowForward,
+  AiOutlineYoutube,
+  BsPinterest,
+  AiOutlineTwitter,
+  MdLocationOn, 
 } from "../../assets/icons/vander";
 import Newsletter from "./newsletter";
 import CenteredModal from "./modal";
@@ -77,6 +81,26 @@ export default function Footer({ top }) {
               <li className="list-inline-item">
                 <Link href="https://www.instagram.com/tltechnologiespvtltd/" target="_blank" className="rounded">
                   <AiOutlineInstagram style={{ fontSize: '1.5rem' }}/>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link href="https://www.youtube.com/@tltechnologiespvtltd-sangi" target="_blank" className="rounded">
+                  <AiOutlineYoutube style={{ fontSize: '1.5rem' }}/>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link href="https://in.pinterest.com/tltechnologiespvtltd/" target="_blank" className="rounded">
+                  <BsPinterest style={{ fontSize: '1.5rem' }}/>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link href="https://x.com/tl_technologies" target="_blank" className="rounded">
+                  <AiOutlineTwitter style={{ fontSize: '1.5rem' }}/>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link href="https://g.co/kgs/FfvVAaj" target="_blank" className="rounded">
+                  <MdLocationOn style={{ fontSize: '1.5rem' }}/>
                 </Link>
               </li>
             </ul>
