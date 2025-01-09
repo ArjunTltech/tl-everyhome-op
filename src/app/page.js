@@ -17,6 +17,7 @@ import { MdArrowForward, AiOutlineCheckCircle, FiArrowRight } from './assets/ico
 
 import { featureData } from "./data/mock-data";
 import Pricing from "./components/pricing";
+import ContactSection from "./components/contact/Contact";
 
 export default function IndexOnePage() {
     return (
@@ -38,7 +39,7 @@ export default function IndexOnePage() {
 
                         <div className="col-md-5 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
                             <div className="shape-before">
-                                <div className="carousel-cell"><Image src="/images/app/hero.png" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="img-fluid" alt="" /></div>
+                                <div className="carousel-cell"><Image src="/images/mock/samsung-galaxy-home.png" width={0} height={0} sizes="100vw" style={{ width: '80%', height: 'auto' }} className="img-fluid" alt="" /></div>
                             </div>
                         </div>
                     </div>
@@ -214,6 +215,12 @@ export default function IndexOnePage() {
 
             </section >
 
+            {/* pricing section */}
+            <section id="Pricing">
+            <Pricing/>
+            </section>
+            {/*End pricing section */}
+
 
             <section className={`section  pb-0 pt-2 md:pt-5 ${styles.servicesSection}`} id="review">
 
@@ -250,7 +257,7 @@ export default function IndexOnePage() {
 
             </section>
 
-            <Pricing/>
+         
 
             {/* Testimonial Section */}
             <section className="section mt-100 mt-50" style={{ backgroundImage: "url('')" }}>
@@ -282,7 +289,7 @@ export default function IndexOnePage() {
 
             {/*End Testimonial Section */}
 
-
+<ContactSection/>
 
             {/* download section */}
             <section className="section" id="download">

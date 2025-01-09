@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import toast from 'react-hot-toast'
 
 const Newsletter = () => {
     const [email, setEmail] = useState('')
@@ -37,11 +38,13 @@ const Newsletter = () => {
           setStatus('success')
           setMessage('Thanks for subscribing!')
           setEmail('')
-          alert('Thanks for subscribing!')
+          toast.success('Thanks for subscribing!')
+      
+
         } catch (error) {
           setStatus('error')
           setMessage(error.message || 'Something went wrong')
-          alert(error.message || 'Something went wrong')
+          toast.error(error.message || 'Something went wrong')
         }
       }
 
