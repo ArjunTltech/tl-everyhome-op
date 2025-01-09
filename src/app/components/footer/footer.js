@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   TbMailStar,
@@ -9,8 +10,24 @@ import {
   IoIosArrowForward,
 } from "../../assets/icons/vander";
 import Newsletter from "./newsletter";
+import CenteredModal from "./modal";
+import modalData from "../../data/modal-data";
 
 export default function Footer({ top }) {
+  const [modalShow, setModalShow] = useState(false);
+  const [currentModalData, setCurrentModalData] = useState({ header: "Default Header", body: "Default Body",date:"Latest updated Date" });
+
+  const handleShowModal = (type) => {
+    const data = modalData[type]; // Fetch the data from modalData
+    if (data) {
+      setCurrentModalData(data); // Set modal data if it exists
+    } else {
+      console.warn(`Modal data for type '${type}' not found!`);
+      setCurrentModalData({ header: "Error", body: "Requested content not found." });
+    }
+    setModalShow(true); // Show the modal
+  };
+
   return (
     <footer className="footer bg-footer">
       {top && (
@@ -27,7 +44,7 @@ export default function Footer({ top }) {
                 </div>
               </div>
               <div className="col-md-4 text-md-end mt-3 mt-md-0">
-                <Link href="" className="btn btn-primary">
+                <Link href="#" className="btn btn-primary">
                   Subscribe Now
                 </Link>
               </div>
@@ -38,6 +55,7 @@ export default function Footer({ top }) {
 
       <div className="container py-4">
         <div className="row">
+          {/* Social Links */}
           <div className="col-lg-3 col-md-3">
             <h6 className="footer-head">Follow Us</h6>
             <ul className="list-unstyled social-icon foot-social-icon mt-3">
@@ -64,6 +82,7 @@ export default function Footer({ top }) {
             </ul>
           </div>
 
+          {/* Resources */}
           <div className="col-lg-3 col-md-3 mt-4 mt-md-0">
             <h6 className="footer-head">Resources</h6>
             <ul className="list-unstyled footer-list mt-3">
@@ -100,25 +119,50 @@ export default function Footer({ top }) {
             </ul>
           </div>
 
+          {/* Useful Links */}
           <div className="col-lg-3 col-md-3 mt-4 mt-md-0">
             <h6 className="footer-head">Useful Links</h6>
-            <ul className="list-unstyled footer-list mt-3">
+            <ul className="list-unstyled">
               <li>
-                <Link href="/" className="text-foot d-flex align-items-center">
-                  <IoIosArrowForward className="me-1" /> Terms of Service
-                </Link>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleShowModal("termsAndConditions");
+                  }}
+                  className="text-foot d-flex align-items-center"
+                  style={{ cursor: "pointer" }}
+                >
+                  <IoIosArrowForward className="me-1" /> Terms and Conditions
+                </a>
               </li>
               <li>
-                <Link href="/" className="text-foot d-flex align-items-center">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleShowModal("privacyPolicy");
+                  }}
+                  className="text-foot d-flex align-items-center"
+                  style={{ cursor: "pointer" }}
+                >
                   <IoIosArrowForward className="me-1" /> Privacy Policy
-                </Link>
+                </a>
               </li>
+              <CenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                modalHeader={currentModalData.header}
+                modalBody={currentModalData.body}
+                UpdatedDate={currentModalData.date}
+              />
             </ul>
           </div>
 
+          {/* Newsletter */}
           <div className="col-lg-3 col-md-3 mt-4 mt-md-0">
             <h6 className="footer-head">Subscribe</h6>
-            <Newsletter/>
+            <Newsletter />
           </div>
         </div>
       </div>

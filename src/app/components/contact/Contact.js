@@ -7,7 +7,7 @@ import Formfeild from './formfeild';
 
 
 const ContactSection = () => {
- 
+
 
   return (
     <div className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
@@ -22,19 +22,19 @@ const ContactSection = () => {
 
         <Row className="justify-content-center">
           <Col md={6}>
-            <Formfeild/>
+            <Formfeild />
           </Col>
 
           <Col md={4} className="mt-5 mt-md-0">
             <div className="bg-white p-4 rounded-3 shadow-sm h-100">
               <h4 className="mb-4">Contact Information</h4>
-              
+
               <div className="d-flex align-items-center mb-4">
                 <Phone className="text-primary me-3" size={24} />
                 <div>
                   <h5 className="mb-1">Phone/WhatsApp</h5>
-                  <a 
-                    href="tel:+919061432814" 
+                  <a
+                    href="tel:+919061432814"
                     className="text-decoration-none text-dark"
                     style={{ transition: 'color 0.3s ease' }}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#0d6efd'}
@@ -49,8 +49,8 @@ const ContactSection = () => {
                 <Mail className="text-primary me-3" size={24} />
                 <div>
                   <h5 className="mb-1">Email</h5>
-                  <a 
-                    href="mailto:contact@example.com" 
+                  <a
+                    href="mailto:contact@example.com"
                     className="text-decoration-none text-dark"
                     style={{ transition: 'color 0.3s ease' }}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#0d6efd'}

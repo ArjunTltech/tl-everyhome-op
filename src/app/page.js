@@ -3,9 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import NavOnePage from "./components/navbar/navOnePage";
-import Partners from "./components/partners";
 import AboutSlider from "./components/onePage/aboutSlider";
-import Counter from "./components/counter";
 import ClientOne from "./components/client/clientOne";
 import Faq from "./components/faq";
 import MobileApp from "./components/mobileApp";
@@ -23,6 +21,7 @@ export default function IndexOnePage() {
     return (
         <>
             <NavOnePage />
+            {/* hero section */}
             <section className="bg-half-170 pb-lg-0 pb-md-4 d-table w-100" style={{ backgroundImage: "url('/images/bg/apps.jpg')", backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} id="home">
                 <div className="bg-overlay bg-gradient-primary opacity-9"></div>
                 <div className="container">
@@ -45,6 +44,7 @@ export default function IndexOnePage() {
                     </div>
                 </div>
             </section>
+            {/*End hero section */}
 
             <div className="position-relative">
                 <div className="shape overflow-hidden text-white">
@@ -53,12 +53,6 @@ export default function IndexOnePage() {
                     </svg>
                 </div>
             </div>
-
-            {/* <section className="pt-4">
-            <div className="container">
-               <Partners/>
-            </div>
-        </section> */}
 
 
             <section className="section overflow-hidden pb-0" id="services">
@@ -91,7 +85,6 @@ export default function IndexOnePage() {
                         </div>
                     </div>
                 </div>
-
                 {/*End about section */}
 
 
@@ -141,8 +134,8 @@ export default function IndexOnePage() {
                         })}
                     </div>
                 </div>
-
                 {/*End Services Section */}
+
 
                 {/* Feature Section */}
                 <div className="container mt-100 mt-60" id="Features">
@@ -217,7 +210,7 @@ export default function IndexOnePage() {
 
             {/* pricing section */}
             <section id="Pricing">
-            <Pricing/>
+                <Pricing />
             </section>
             {/*End pricing section */}
 
@@ -257,7 +250,6 @@ export default function IndexOnePage() {
 
             </section>
 
-         
 
             {/* Testimonial Section */}
             <section className="section mt-100 mt-50" style={{ backgroundImage: "url('')" }}>
@@ -286,10 +278,15 @@ export default function IndexOnePage() {
                     </div>
                 </div>
             </section>
-
             {/*End Testimonial Section */}
 
-<ContactSection/>
+
+            {/* Contact Section */}
+            <section id="Contact">
+                <ContactSection />
+            </section>
+            {/*End Contact Section */}
+
 
             {/* download section */}
             <section className="section" id="download">
