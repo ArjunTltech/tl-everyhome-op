@@ -35,7 +35,7 @@ export default function AboutSlider() {
                             width={0} 
                             height={0} 
                             sizes="100vw" 
-                            style={{width:'100%', height:'auto'}} 
+                            style={{width:'80%', height:'auto'}} 
                             className="img-fluid" 
                             alt=""
                             priority={index === 0}

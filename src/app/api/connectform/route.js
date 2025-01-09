@@ -1,5 +1,5 @@
 // 1. Create the API route
-// app/api/newsletter/route.js
+// app/api/connectform/route.js
 import { NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client';
 
@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
 export async function POST(request) {
   try {
     const data = await request.json()
-    const { email } = data
+    const { name,email,subject,message } = data
 
     // Validate email
     if (!email || !email.includes('@')) {
@@ -19,15 +19,18 @@ export async function POST(request) {
     }
 
     // Save to database
-    const subscriber = await prisma.newsletterSubscription.create({
+    const subscriber = await prisma.Contact.create({
       data: {
+        name,
         email,
+        subject,
+        message,
         createdAt: new Date(),
       },
     })
 
     return NextResponse.json({ 
-      message: 'Successfully subscribed!',
+      message: 'Message send Successfully ',
       subscriber 
     }, { status: 201 })
 
