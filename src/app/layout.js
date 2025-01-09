@@ -38,19 +38,19 @@ const kaushan = Kaushan_Script({
 export const metadata = {
   title: 'EveryHome | Your All-in-One Service Platform',
   description: 'EveryHome connects service providers and customers in one seamless platform. Book services, manage appointments, and streamline your life.',
-  // keywords: 'service booking, appointment management, home services, business solutions',
-  // openGraph: {
-  //   title: 'EveryHome | Your All-in-One Service Platform',
-  //   description: 'Your all-in-one platform for service booking and management',
-  //   url: 'https://everyhome.tltechnologies.net',
-  //   siteName: 'EveryHome',
-  //   images: [{
-  //     url: '/images/eh-logo.png',
-  //     width: 1200,
-  //     height: 630,
-  //   }],
-  //   type: 'website',
-  // },
+  keywords: 'service booking, appointment management, home services, business solutions',
+  openGraph: {
+    title: 'EveryHome | Your All-in-One Service Platform',
+    description: 'Your all-in-one platform for service booking and management',
+    url: 'https://everyhome.tltechnologies.net',
+    siteName: 'EveryHome',
+    images: [{
+      url: '/images/eh-logo.png',
+      width: 1200,
+      height: 630,
+    }],
+    type: 'website',
+  },
 
 }
 

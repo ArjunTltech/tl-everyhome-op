@@ -1,0 +1,41 @@
+/* custom modal styles */
+.custom-modal .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-modal-body {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .modal-update-info {
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .modal-update-info h6 {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .modal-body-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    white-space: pre-wrap;
+  }
+  
