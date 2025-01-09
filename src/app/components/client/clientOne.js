@@ -57,7 +57,7 @@ export default function ClientOne({ bgWhite }) {
             desc: `EveryHome helped me organize my home projects seamlessly. I can’t imagine going back!`
         }
     ];
-    
+
 
     return (
         <div className="row">
@@ -67,11 +67,11 @@ export default function ClientOne({ bgWhite }) {
                         <div key={index} className="px-2">
                             <div className={`${bgWhite ? 'bg-white shadow' : ''} card border-0 text-center`}>
                                 <div className="card-body">
-                                    <Image 
-                                        src={item.image} 
-                                        width={65} 
-                                        height={65} 
-                                        className="img-fluid avatar avatar-small rounded-circle mx-auto shadow" 
+                                    <Image
+                                        src={item.image}
+                                        width={65}
+                                        height={65}
+                                        className="img-fluid avatar avatar-small rounded-circle mx-auto shadow"
                                         alt=""
                                     />
                                     <p className=" mt-4" style={{ color: "#d1d1d1" }}>{item.desc}</p>

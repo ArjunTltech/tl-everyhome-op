@@ -57,7 +57,7 @@ const Formfeild = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
@@ -65,7 +65,7 @@ const Formfeild = () => {
     }
 
     setLoading(true);
-    
+
     // Show loading toast
     const loadingToast = toast.loading('Sending message...');
 
@@ -87,7 +87,7 @@ const Formfeild = () => {
         id: loadingToast,
         duration: 3000
       });
-      
+
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       // Error toast
@@ -112,8 +112,8 @@ const Formfeild = () => {
             onChange={handleChange}
             placeholder="Enter your name"
             isInvalid={!!errors.name}
-            style={{ 
-              padding: '0.8rem', 
+            style={{
+              padding: '0.8rem',
               borderRadius: '8px'
             }}
           />
@@ -131,8 +131,8 @@ const Formfeild = () => {
             onChange={handleChange}
             placeholder="Enter your email"
             isInvalid={!!errors.email}
-            style={{ 
-              padding: '0.8rem', 
+            style={{
+              padding: '0.8rem',
               borderRadius: '8px'
             }}
           />
@@ -150,8 +150,8 @@ const Formfeild = () => {
             onChange={handleChange}
             placeholder="Enter subject"
             isInvalid={!!errors.subject}
-            style={{ 
-              padding: '0.8rem', 
+            style={{
+              padding: '0.8rem',
               borderRadius: '8px'
             }}
           />
@@ -169,8 +169,8 @@ const Formfeild = () => {
             onChange={handleChange}
             placeholder="Your message"
             isInvalid={!!errors.message}
-            style={{ 
-              padding: '0.8rem', 
+            style={{
+              padding: '0.8rem',
               borderRadius: '8px',
               minHeight: '150px'
             }}
@@ -180,12 +180,12 @@ const Formfeild = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Button 
+        <Button
           variant="primary"
           type="submit"
           className="w-100 py-3 d-flex align-items-center justify-content-center gap-2"
           disabled={loading}
-          style={{ 
+          style={{
             borderRadius: '8px',
             transition: 'all 0.3s ease'
           }}
