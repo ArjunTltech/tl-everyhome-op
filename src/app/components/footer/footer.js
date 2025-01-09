@@ -15,7 +15,7 @@ import modalData from "../../data/modal-data";
 
 export default function Footer({ top }) {
   const [modalShow, setModalShow] = useState(false);
-  const [currentModalData, setCurrentModalData] = useState({ header: "Default Header", body: "Default Body",date:"Latest updated Date" });
+  const [currentModalData, setCurrentModalData] = useState({ header: "Default Header", body: "Default Body", date: "Latest updated Date" });
 
   const handleShowModal = (type) => {
     const data = modalData[type]; // Fetch the data from modalData
@@ -61,22 +61,22 @@ export default function Footer({ top }) {
             <ul className="list-unstyled social-icon foot-social-icon mt-3">
               <li className="list-inline-item">
                 <Link href="https://www.linkedin.com/company/tltechnologiespvtltd/" target="_blank" className="rounded">
-                  <AiFillLinkedin />
+                  <AiFillLinkedin style={{ fontSize: '1.5rem' }}/>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://api.whatsapp.com/send/?phone=%2B919061432814&text=Hello%2C+I+am+interested+to+know+more+about+PRODUCTS+%26+SERVICES&type=phone_number&app_absent=0" target="_blank" className="rounded">
-                  <AiOutlineWhatsApp />
+                  <AiOutlineWhatsApp style={{ fontSize: '1.5rem' }}/>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://www.facebook.com/tltechnologiespvtltd" target="_blank" className="rounded">
-                  <BiLogoFacebook />
+                  <BiLogoFacebook style={{ fontSize: '1.5rem' }}/>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://www.instagram.com/tltechnologiespvtltd/" target="_blank" className="rounded">
-                  <AiOutlineInstagram />
+                  <AiOutlineInstagram style={{ fontSize: '1.5rem' }}/>
                 </Link>
               </li>
             </ul>
@@ -120,7 +120,7 @@ export default function Footer({ top }) {
           </div>
 
           {/* Useful Links */}
-          <div className="col-lg-3 col-md-3 mt-4 mt-md-0">
+          <div className="col-lg-3 col-md-3 mt-4 mt-md-3">
             <h6 className="footer-head">Useful Links</h6>
             <ul className="list-unstyled">
               <li>

@@ -191,15 +191,12 @@ export default function IndexOnePage() {
                                     </li>
                                 </ul>
 
-                                {/* <div className="mt-4">
-                                    <Link href="#" className="btn btn-primary">Download Now</Link>
-                                </div> */}
                             </div>
                         </div>
 
                         <div className="col-md-6">
                             <div className="app-feature-shape position-relative">
-                                <Image src='/images/crypto/hand-with-mobile.png' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="img-fluid" alt="" />
+                                <Image src='/images/mock/mockup-handmobile-2.png' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="img-fluid" alt="" />
                             </div>
                         </div>
                     </div>
