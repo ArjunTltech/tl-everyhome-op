@@ -16,6 +16,7 @@ import { MdArrowForward, AiOutlineCheckCircle, FiArrowRight } from './assets/ico
 import { featureData } from "./data/mock-data";
 import Pricing from "./components/pricing";
 import ContactSection from "./components/contact/Contact";
+import CookieManager from "./components/cookie/cookieManager";
 
 export default function IndexOnePage() {
     return (
@@ -45,6 +46,7 @@ export default function IndexOnePage() {
                 </div>
             </section>
             {/*End hero section */}
+            
 
             <div className="position-relative">
                 <div className="shape overflow-hidden text-white">
@@ -294,6 +296,7 @@ export default function IndexOnePage() {
             {/*End download section */}
 
             <Footer />
+            <CookieManager/>
             <ScrollTop />
         </>
     )

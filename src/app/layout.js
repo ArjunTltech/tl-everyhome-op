@@ -2,13 +2,15 @@ import { Poppins, Ubuntu, Teko, Noto_Sans,Libre_Baskerville,Kaushan_Script } fro
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/scss/style.scss'
 import './assets/css/materialdesignicons.min.css'
+import Script from 'next/script'
+// import Preloader from './components/Pre-loader/preloader'
+// import { Providers } from './Providers'
 
 const poppins = Poppins({ 
   subsets: ['latin'],
   weight:['100','200','300','400','500','600','700','800','900'],
   variable: '--font-poppins',
 })
-
 const ubuntu = Ubuntu({ 
   subsets: ['latin'],
   weight:['300','400','500','700'],
@@ -54,10 +56,31 @@ export const metadata = {
 
 }
 
+const GA_TRACKING_ID ='G-LPTV55JYFJ'
+
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>{children}</body>
+        <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `}
+        </Script>
+      </head>
+      <body className={`${poppins.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>
+  {/* <Providers> */}
+        {children}
+  {/* </Providers> */}
+      </body>
     </html>
   )
 }
