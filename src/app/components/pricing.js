@@ -39,7 +39,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="bg-light py-5"  style={{ background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
+    <div className="bg-light py-5" style={{ background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
       <Container>
         <Row className="text-center mb-5">
           <Col md={{ span: 8, offset: 2 }}>
@@ -47,14 +47,14 @@ const Pricing = () => {
             <div className="mx-auto bg-primary" style={{ height: '3px', width: '100px' }}></div>
           </Col>
         </Row>
-        
+
         <Row>
           {plans.map((plan, index) => (
             <Col key={index} md={4} className="mb-4">
-              <Card 
+              <Card
                 className={`h-100 shadow-sm position-relative ${plan.isPopular ? 'border-primary' : ''}`}
-                style={{ 
-                  borderRadius: '12px', 
+                style={{
+                  borderRadius: '12px',
                   transition: 'all 0.3s ease',
                   overflow: 'hidden'
                 }}
@@ -68,7 +68,7 @@ const Pricing = () => {
                 }}
               >
                 {plan.isPopular && (
-                  <div 
+                  <div
                     className="position-absolute top-0 start-50 translate-middle-x"
                     style={{ marginTop: '-10px' }}
                   >
@@ -78,7 +78,7 @@ const Pricing = () => {
                   </div>
                 )}
 
-                <Card.Header 
+                <Card.Header
                   className="text-center py-4 border-0"
                   style={{
                     background: 'linear-gradient(135deg, #1d3557 0%, #457b9d 100%)',
@@ -105,7 +105,7 @@ const Pricing = () => {
                       )}
                     </h4>
                   </div>
-                  
+
                   <ul className="list-unstyled mb-4">
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="mb-3 d-flex align-items-center">
@@ -116,14 +116,16 @@ const Pricing = () => {
                   </ul>
 
                   <div className="mt-auto">
-                    <button 
+                    <button
+                      onClick={() => window.open('https://connect.tltechnologies.net/', '_blank', 'noopener noreferrer')}
                       className={`btn ${plan.isPopular ? 'btn-primary' : 'btn-dark'} w-100`}
-                      style={{ 
+                      style={{
                         transition: 'all 0.3s ease',
                         transform: 'scale(1)',
                       }}
                       onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                       onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+
                     >
                       Get Started
                     </button>
