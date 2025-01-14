@@ -25,6 +25,8 @@ const Formfeild = () => {
     const newErrors = {};
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
+    } else if (!/^[A-Za-z\s]+$/.test(formData.name)) {
+      newErrors.name = 'Name must only contain letters and spaces';
     }
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
@@ -39,6 +41,7 @@ const Formfeild = () => {
     }
     return newErrors;
   };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
