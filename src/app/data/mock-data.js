@@ -19,7 +19,7 @@ export const featureData = [
     {
         icon: MdOutlineChecklist, 
         title: 'Task Organization',
-        desc: 'Stay on top of your responsibilities with intuitive tools for organizing home and business tasks'
+        desc: 'Stay on top of your responsibilities with intuitive tools for organizing home and business tasks.'
     },
     {
         icon: IoNotificationsOutline, 

@@ -32,7 +32,7 @@ export default function IndexOnePage() {
                                 <h1 className="heading text-white title-dark mb-4">Simplify Your Life with EveryHome</h1>
                                 <p className="para-desc text-white-50">Connecting service providers, business professionals, and customers in one seamless platform.</p>
                                 <div className="mt-4 pt-2">
-                                    <Link href="#" className="btn btn-primary rounded-lg">Get Started Now <FiArrowRight className="fea icon-sm" /></Link>
+                                    <Link href="https://connect.tltechnologies.net/" className="btn btn-primary rounded-lg" target="_blank">Get Started Now <FiArrowRight className="fea icon-sm" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ export default function IndexOnePage() {
                         <div className="col-lg-7 col-md-6 order-md-2 order-1">
                             <div className="ms-lg-5">
                                 <div className="section-title">
-                                    <h4 className="text-primary">Who We Are ?</h4>
+                                    <h4 className="text-primary">Who We Are?</h4>
                                     <h3 className="title mb-4">Your all-in-one platform  <br /> for convenience and efficiency</h3>
                                     <p className="text-muted para-desc mb-0">EveryHome is a cutting-edge platform designed to simplify the way homeowners, service providers, and businesses interact. By streamlining service booking, task management, and transactions, EveryHome makes managing home and business needs effortless.</p>
 
@@ -80,7 +80,7 @@ export default function IndexOnePage() {
                                     </ul>
 
                                     <div className="mt-4">
-                                        <Link href="#" className="btn btn-soft-primary rounded-sm">Learn More About EveryHome<FiArrowRight className="fea icon-sm" /></Link>
+                                        <Link href="https://connect.tltechnologies.net/" className="btn btn-soft-primary rounded-sm" target="_blank">Learn More About EveryHome<FiArrowRight className="fea icon-sm" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ export default function IndexOnePage() {
                         <div className="col-12 text-center">
                             <div className="section-title mb-4 pb-2">
                                 <h3 className="title mb-4 ">
-                                    Check Out Our Services
+                                Explore Our Services
                                 </h3>
                             </div>
                         </div>
@@ -120,16 +120,7 @@ export default function IndexOnePage() {
 
                                             <p className="text-muted mb-4">{item.desc}</p>
                                         </div>
-                                        {/* 
-                        <Link 
-                            href="/page-single-service"
-                            className="mt-auto"
-                        >
-                            <span className="text-dark d-inline-flex align-items-center">
-                                Read More 
-                                <MdArrowForward className="ms-2" style={{marginTop: "2px"}}/>
-                            </span>
-                        </Link> */}
+
                                     </div>
                                 </div>
                             )
@@ -145,7 +136,7 @@ export default function IndexOnePage() {
                         <div className="col-md-6">
                             <div className="section-title mb-4 pb-2">
                                 <h4 className="title mb-4">Discover Innovative Features <br /> Built for Modern Living</h4>
-                                <p className="text-muted para-desc mb-0">Smart solutions tailored to bring ease, efficiency, and seamless management to your life</p>
+                                <p className="text-muted para-desc mb-0">Smart solutions tailored to bring ease, efficiency, and seamless management to your life.</p>
 
                                 <ul className="list-unstyled mb-0">
                                     <li className="d-flex mt-4">
@@ -215,43 +206,16 @@ export default function IndexOnePage() {
 
 
             <section className={`section  pb-0 pt-2 md:pt-5 ${styles.servicesSection}`} id="review">
-
                 {/*  FAQ section  */}
                 <div className="container mt-100 mt-60 " id="Faq" >
                     <Faq />
                 </div>
                 {/* End FAQ section  */}
-
-
-                {/* Testimonial section  */}
-                {/* 
-                <div className="container mt-100 mt-60" id="Testimonial">
-                    <div className="row justify-content-center">
-                        <div className="col-12 text-center">
-                            <div className="section-title mb-4 pb-2">
-                                <h4 className="title mb-4">
-                                    See What Our Users
-                                  
-                                    <span className="d-none d-md-inline"> </span>
-                             
-                                    <span className="d-md-none"><br /></span>
-                                    Are Saying
-                                </h4>
-                                <p className="text-muted para-desc mb-0 mx-auto">
-                                    Join thousands who’ve simplified their lives with EveryHome.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <ClientOne />
-                </div>
-       */}
-
             </section>
 
 
             {/* Testimonial Section */}
-            <section className="section mt-100 mt-50" style={{ backgroundImage: "url('')" }}>
+            <section className="section mt-100 mt-50" >
                 <div className="bg-overlay bg-gradient-primary opacity-9"></div>
                 <div className="container">
                     <div className="container mt-100 mt-60" id="Testimonial">
@@ -267,7 +231,7 @@ export default function IndexOnePage() {
                                         Are Saying
                                     </h4>
                                     <p className=" para-desc mb-0 mx-auto" style={{ color: "#d1d1d1" }}>
-                                        Join thousands who’ve simplified their lives with EveryHome.
+                                    Join thousands who’ve simplified their lives with EveryHome’s seamless service management.
                                     </p>
 
                                 </div>
