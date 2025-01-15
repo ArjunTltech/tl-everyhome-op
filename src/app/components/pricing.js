@@ -7,7 +7,7 @@ const Pricing = () => {
   const plans = [
     {
       title: "Basic Plan",
-      price: "Free",
+      // price: "Free",
       icon: <User className="text-primary" size={32} />,
       features: [
         "Access to service booking",
@@ -17,7 +17,7 @@ const Pricing = () => {
     },
     {
       title: "Premium Plan",
-      price: "₹299/month or $3.99/month",
+      // price: "₹299/month or $3.99/month",
       icon: <Crown className="text-warning" size={32} />,
       features: [
         "Real-time notifications",
@@ -28,7 +28,7 @@ const Pricing = () => {
     },
     {
       title: "Pro Plan",
-      price: "₹999/month or $12.99/month",
+      // price: "₹999/month or $12.99/month",
       icon: <Zap className="text-danger" size={32} />,
       features: [
         "Advanced tools for service providers",
@@ -72,7 +72,7 @@ const Pricing = () => {
                     className="position-absolute top-0 start-50 translate-middle-x"
                     style={{ marginTop: '-10px' }}
                   >
-                    <span className="badge bg-warning text-dark d-flex align-items-center gap-1 px-3 py-2">
+                    <span className="badge bg-warning text-dark d-flex align-items-center gap-1 px-3 pt-3 pb-1">
                       <Star size={14} /> Most Popular
                     </span>
                   </div>
@@ -94,7 +94,7 @@ const Pricing = () => {
                 <Card.Body className="d-flex flex-column" style={{ backgroundColor: "#FFFFFF" }}>
                   <div className="text-center mb-4">
                     <h4 className="text-primary fw-bold">
-                      {plan.price === "Free" ? (
+                      {/* {plan.price === "Free" ? (
                         "Free"
                       ) : (
                         <>
@@ -102,7 +102,7 @@ const Pricing = () => {
                           <br />
                           <small className="text-muted">or {plan.price.split(" or ")[1]}</small>
                         </>
-                      )}
+                      )} */}
                     </h4>
                   </div>
 
