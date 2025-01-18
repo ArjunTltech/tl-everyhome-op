@@ -83,9 +83,9 @@ export default function NavOnePage() {
                             <li className="has-submenu">
                                 <Link1 to="Faq" spy={true} smooth={true} duration={500} activeClass="active">Faq</Link1>
                             </li>
-                            <li className="has-submenu">
+                            {/* <li className="has-submenu">
                                 <Link1 to="Contact" spy={true} smooth={true} duration={500} activeClass="active">Contact</Link1>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

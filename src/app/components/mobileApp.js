@@ -9,7 +9,7 @@ export default function MobileApp() {
         <>
             <div className="row align-items-center">
                 <div className="col-lg-5 col-md-5 col-12">
-                    <Image src='/images/mock/iPhone_16-3.png' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="img-fluid" alt="" />
+                    <Image src='/images/mock/iPhone_16.png' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="img-fluid" alt="" />
                 </div>
 
                 <div className="col-lg-7 col-md-7 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">

@@ -14,12 +14,12 @@ import {
   MdLocationOn, 
 } from "../../assets/icons/vander";
 import Newsletter from "./newsletter";
-import CenteredModal from "./modal";
+import CenteredModal from "./modal/modal";
 import modalData from "../../data/modal-data";
 
 export default function Footer({ top }) {
   const [modalShow, setModalShow] = useState(false);
-  const [currentModalData, setCurrentModalData] = useState({ header: "Default Header", body: "Default Body", date: "Latest updated Date" });
+  const [currentModalData, setCurrentModalData] = useState({ header: "Default Header", body: "Default Body", effectiveDate: "Latest updated Date" ,lastDate: "Last updated Date"});
 
   const handleShowModal = (type) => {
     const data = modalData[type]; // Fetch the data from modalData
@@ -178,7 +178,8 @@ export default function Footer({ top }) {
                 onHide={() => setModalShow(false)}
                 modalHeader={currentModalData.header}
                 modalBody={currentModalData.body}
-                UpdatedDate={currentModalData.date}
+                effectiveDate={currentModalData.effectiveDate}
+                lastDate={currentModalData.lastDate}
               />
             </ul>
           </div>
@@ -195,7 +196,7 @@ export default function Footer({ top }) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
-              <p className="mb-0 text-muted">&copy; 2025 EveryHome. All rights reserved.</p>
+              <p className="mb-0 text-muted">&copy; 2025 TL Technologies. All rights reserved.</p>
             </div>
           </div>
         </div>
