@@ -38,4 +38,4 @@ export const featureData = [
     },
 ];
 
-export const aboutImg = ['/images/mock/samsung-1.png', '/images/mock/samsung-2.png','/images/mock/samsung-3.png']
+export const aboutImg = ['/images/mock/m1.png', '/images/mock/m2.png','/images/mock/m3.png']

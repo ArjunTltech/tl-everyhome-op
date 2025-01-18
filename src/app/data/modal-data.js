@@ -3,18 +3,15 @@ const modalData = {
     header: "Terms & Conditions",
     effectiveDate: " January 15, 2025",
     lastDate: " January 15, 2025",
-    body: `
-Welcome to EveryHome! These Terms and Conditions govern your use of our website, app, and services. By accessing or using our platform, you agree to these terms.
+    body: `Welcome to EveryHome! These Terms and Conditions govern your use of our website, app, and services. By accessing or using our platform, you agree to these terms.
 
 1. Acceptance of Terms
 By using EveryHome, you confirm that:
-
-  • You have read and understood these Terms and Conditions
+  • You have read and understood these Terms and Conditions.                        
   • You agree to abide by these terms and any updates made to them.
 
 2. Services Provided
 EveryHome provides a platform to connect users with service providers in their area. Services offered may include, but are not limited to:
-
   • Home maintenance and repair solutions.
   • Professional services (e.g., electricians, plumbers, cleaners)
   • Lifestyle and personal care services.
@@ -23,7 +20,6 @@ Specific offerings may vary based on your location and app version. EveryHome do
 
 3. User Responsibilities
 When using EveryHome, you are responsible for:
-
   • Accurate Information: Ensuring all details provided (e.g., contact information, service requests) are accurate and up to date.
   • Compliance: Using the platform in accordance with applicable laws and regulations.
   • Account Security: Safeguarding your account credentials and notifying us immediately of any unauthorized access.
@@ -31,7 +27,6 @@ When using EveryHome, you are responsible for:
 
 4. Limitations of Liability
 EveryHome strives to provide a seamless experience, but we are not liable for:
-
   • Third-Party Actions: Errors, delays, or issues caused by service providers listed on our platform.
   • Service Interruptions: Temporary unavailability of the platform due to maintenance or unforeseen technical issues.
   • User Errors: Losses arising from incorrect or incomplete information provided by users.
@@ -40,7 +35,6 @@ EveryHome is a facilitator and does not guarantee the quality, accuracy, or time
 
 5. Termination
 We reserve the right to suspend or terminate your access to EveryHome under the following circumstances:
-
   • Violation of Terms: If you breach these Terms and Conditions.
   • Prohibited Activities: Engagement in activities deemed inappropriate, fraudulent, or harmful to other users or service providers.
   • Inactivity: Extended inactivity on your account.
@@ -66,9 +60,7 @@ Email: sangi@tltechnologies.net
     header: "Privacy Policy",
     effectiveDate: " January 15, 2025",
     lastDate: " January 15, 2025",
-    body: `
-
-EveryHome values your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our website, app, or services.
+    body: `EveryHome values your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our website, app, or services.
 
 1. Information We Collect
   • Personal Information: Name, email address, phone number, and location (if required for service delivery).
@@ -77,26 +69,22 @@ EveryHome values your privacy and is committed to protecting your personal infor
 
 2. How We Use Your Information
 We use the information collected to:
-
   • Provide and enhance our services.
   • Send you important updates, notifications, and promotional offers (if you have opted in).
   • Ensure secure transactions and improve platform functionality
 
 3. Data Sharing
 We do not sell, trade, or rent your personal information. We may share your data only in the following scenarios:
-
 • Service Providers: Trusted third parties who assist in operating our platform, subject to strict confidentiality agreements.
 • Legal Requirements: When required by law to comply with legal processes or protect the safety and rights of users.
 
 4. Data Security
 We prioritize the security of your data through:
-
 • Advanced encryption for data transmission and storage.
 • Limiting access to your information to authorized personnel only.
 
 5. Your Rights
 As a user, you have the following rights:
-
 • Access and Update: Request access to your personal information or make corrections to ensure accuracy.
 • Data Deletion: Request deletion of your data, subject to any legal or contractual obligations.
 • Withdraw Consent: Opt-out of receiving marketing communications at any time.

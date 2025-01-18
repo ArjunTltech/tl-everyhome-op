@@ -11,15 +11,15 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
         const [title, ...content] = section.split('\n');
         const sectionNumber = title.split('.')[0];
         const sectionTitle = title.split('.')[1]?.trim();
-  
-        // Process content for bullets or plain text
+
+        // Process content to identify bullet points or plain text
         const formattedContent = content.flatMap((item) => {
           if (item.trim().startsWith('•')) {
             return [{ type: 'bullet', content: item.trim().substring(1).trim() }];
           }
           return [{ type: 'text', content: item.trim() }];
         });
-  
+
         return {
           type: 'section',
           number: sectionNumber,
@@ -27,14 +27,31 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
           content: formattedContent,
         };
       }
-  
+
       // Treat everything else as a paragraph
       return { type: 'paragraph', content: section.trim() };
     });
-  
-    return sections;
+
+    return sections.flatMap((item) => {
+      if (item.type === 'section') {
+        return [
+          {
+            type: 'section',
+            number: item.number,
+            title: item.title,
+            content: item.content.map((contentItem) =>
+              contentItem.type === 'bullet'
+                ? contentItem
+                : { type: 'text', content: contentItem.content }
+            ),
+          },
+        ];
+      }
+
+      return item;
+    });
   };
-  
+
   return (
     <Modal
       show={show}
@@ -52,7 +69,7 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
           </Modal.Title>
         </div>
       </Modal.Header>
-  
+
       <Modal.Body className="p-0">
         {/* Date Information Banner */}
         <div className="bg-light border-top border-bottom px-4 py-3">
@@ -75,7 +92,7 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
             )}
           </div>
         </div>
-  
+
         {/* Main Content */}
         <div className="p-4 terms-content">
           {renderContent(modalBody).map((item, index) => {
@@ -86,7 +103,7 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
                 </div>
               );
             }
-  
+
             if (item.type === 'section') {
               return (
                 <div key={index} className="mb-4 section-container">
@@ -94,9 +111,7 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
                     <div className="section-number me-3 h5 text-primary">
                       {item.number}
                     </div>
-                    <h3 className="h5 mb-0 text-dark">
-                      {item.title}
-                    </h3>
+                    <h3 className="h5 mb-0 text-dark">{item.title}</h3>
                   </div>
                   <div className="ms-4">
                     {item.content.map((contentItem, i) => {
@@ -120,7 +135,8 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
             }
           })}
         </div>
-  
+
+
         {/* Contact Footer */}
         {modalBody.includes('Contact Us') && (
           <div className="border-top px-4 py-3 bg-light">
@@ -140,6 +156,6 @@ const CenteredModal = ({ modalHeader, modalBody, effectiveDate, lastDate, show, 
       </Modal.Body>
     </Modal>
   );
-}  
+}
 
 export default CenteredModal;
