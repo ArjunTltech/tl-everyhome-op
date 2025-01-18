@@ -245,9 +245,9 @@ export default function IndexOnePage() {
 
 
             {/* Contact Section */}
-            <section id="Contact">
+            {/* <section id="Contact">
                 <ContactSection />
-            </section>
+            </section> */}
             {/*End Contact Section */}
 
 

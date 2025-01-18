@@ -11,7 +11,7 @@ import {
   AiOutlineYoutube,
   BsPinterest,
   AiOutlineTwitter,
-  MdLocationOn, 
+  MdLocationOn,
 } from "../../assets/icons/vander";
 import Newsletter from "./newsletter";
 import CenteredModal from "./modal";
@@ -19,7 +19,12 @@ import modalData from "../../data/modal-data";
 
 export default function Footer({ top }) {
   const [modalShow, setModalShow] = useState(false);
-  const [currentModalData, setCurrentModalData] = useState({ header: "Default Header", body: "Default Body", date: "Latest updated Date" });
+  const [currentModalData, setCurrentModalData] = useState(
+    { header: "Default Header", 
+      body: "Default Body", 
+      effectiveDate: "Latest updated Date", 
+      lastDate: "Last updated Date" 
+    });
 
   const handleShowModal = (type) => {
     const data = modalData[type]; // Fetch the data from modalData
@@ -65,42 +70,42 @@ export default function Footer({ top }) {
             <ul className="list-unstyled social-icon foot-social-icon mt-3">
               <li className="list-inline-item">
                 <Link href="https://www.linkedin.com/company/tltechnologiespvtltd/" target="_blank" className="rounded">
-                  <AiFillLinkedin style={{ fontSize: '1.5rem' }}/>
+                  <AiFillLinkedin style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://api.whatsapp.com/send/?phone=%2B919061432814&text=Hello%2C+I+am+interested+to+know+more+about+PRODUCTS+%26+SERVICES&type=phone_number&app_absent=0" target="_blank" className="rounded">
-                  <AiOutlineWhatsApp style={{ fontSize: '1.5rem' }}/>
+                  <AiOutlineWhatsApp style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://www.facebook.com/tltechnologiespvtltd" target="_blank" className="rounded">
-                  <BiLogoFacebook style={{ fontSize: '1.5rem' }}/>
+                  <BiLogoFacebook style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://www.instagram.com/tltechnologiespvtltd/" target="_blank" className="rounded">
-                  <AiOutlineInstagram style={{ fontSize: '1.5rem' }}/>
+                  <AiOutlineInstagram style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://www.youtube.com/@tltechnologiespvtltd-sangi" target="_blank" className="rounded">
-                  <AiOutlineYoutube style={{ fontSize: '1.5rem' }}/>
+                  <AiOutlineYoutube style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://in.pinterest.com/tltechnologiespvtltd/" target="_blank" className="rounded">
-                  <BsPinterest style={{ fontSize: '1.5rem' }}/>
+                  <BsPinterest style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://x.com/tl_technologies" target="_blank" className="rounded">
-                  <AiOutlineTwitter style={{ fontSize: '1.5rem' }}/>
+                  <AiOutlineTwitter style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link href="https://g.co/kgs/FfvVAaj" target="_blank" className="rounded">
-                  <MdLocationOn style={{ fontSize: '1.5rem' }}/>
+                  <MdLocationOn style={{ fontSize: '1.5rem' }} />
                 </Link>
               </li>
             </ul>
@@ -178,7 +183,8 @@ export default function Footer({ top }) {
                 onHide={() => setModalShow(false)}
                 modalHeader={currentModalData.header}
                 modalBody={currentModalData.body}
-                UpdatedDate={currentModalData.date}
+                effectiveDate={currentModalData.effectiveDate}
+                lastDate={currentModalData.lastDate}
               />
             </ul>
           </div>
@@ -195,8 +201,17 @@ export default function Footer({ top }) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
-              <p className="mb-0 text-muted">&copy; 2025 EveryHome. All rights reserved.</p>
+              <p className="mb-0 text-muted">&copy; 2025 TL Technologies. All rights reserved.</p>
+
             </div>
+            <p className="mb-0 text-muted d-flex justify-content-center justify-content-md-center  align-items-center">
+              Powered By&nbsp;
+              <img
+                src="/images/tl-logo.png"
+                alt="TI Logo"
+                style={{ maxHeight: "30px", verticalAlign: "middle" }}
+              />
+            </p>
           </div>
         </div>
       </div>
