@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function ServiceUnavailableError() {
+const ServiceUnavailableError=()=> {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-green-50 p-4">
       <div className="max-w-md text-center">
@@ -16,3 +16,4 @@ export default function ServiceUnavailableError() {
     </div>
   );
 }
+export default ServiceUnavailableError;
