@@ -1,44 +1,74 @@
+'use client';
+
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Image from "next/image";
+import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Custom404 = () => {
+export default function NotFound() {
   return (
-    <Container 
-      fluid 
-      className="d-flex align-items-center justify-content-center vh-100"
-      style={{ backgroundColor: '#FEFEFE' }}  // Set the background color to #FEFEFE
+    <Container
+      fluid
+      className="d-flex flex-column justify-content-center align-items-start text-start"
+      style={{
+        backgroundImage: 'url(/images/error/error404-new.jpg)',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+        position: "relative",
+        padding: "1rem",
+      }}
     >
-      <Row className="text-center align-items-center">
-        <Col xs={12}>
-          <div className="mb-5">
-            <Image 
-              src="/images/error/error404.jpg" 
-              alt="404 Error Illustration" 
-              width={400} 
-              height={300} 
-              className="img-fluid mx-auto d-block mb-5"
-            />
-          </div>
-          <div className="error-content">
-            <p className="lead text-muted mb-5">
-              The page you are looking for seems to have disappeared into the digital void. 
-              Let's guide you back to safety.
-            </p>
-            <Button 
-              href="/" 
-              variant="primary" 
-              size="lg" 
-              className="px-5 py-3 rounded-pill shadow-sm"
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+        }}
+      ></div>
+
+      <Row className="w-100 px-3 px-md-5 position-relative" style={{ marginLeft: "4rem" }}>
+        <Col md={8} lg={5} className="ms-md-5">
+          <h1 className="display-1 fw-bold text-white mb-0">404</h1>
+          <h2 className="display-5 fw-semibold text-white mb-3">
+            Oops! We couldn’t find that page.
+          </h2>
+          <p className="lead text-white mb-4" style={{ maxWidth: "600px" }}>
+            It looks like the page you’re searching for has been moved, renamed, or is temporarily unavailable.
+          </p>
+
+          <p className="text-white fw-medium mb-3">Don’t worry, here’s what you can do:</p>
+          <ul className="text-white mb-4" style={{ listStyleType: "none", paddingLeft: 0 }}>
+            <li>✔ Double-check the URL you entered.</li>
+            <li>✔ Navigate back to our homepage to start fresh.</li>
+            <li>✔ Use the search bar to find what you’re looking for.</li>
+          </ul>
+
+          <p className="text-white fw-medium mb-4">
+  If you still need help, feel free to{" "}
+  <Link href="https://connect.tltechnologies.net/" target="_blank" passHref>
+    <span className="text-decoration-underline text-info" style={{ cursor: "pointer" }}>
+      contact us
+    </span>
+  </Link>.
+</p>
+
+
+          <Link href="/" passHref>
+            <Button
+              variant="light"
+              size="lg"
+              className="px-4 py-3 rounded-pill text-danger fw-medium shadow-sm"
             >
-              Return to Home
+              Go to Homepage
             </Button>
-          </div>
+          </Link>
         </Col>
       </Row>
     </Container>
   );
-};
-
-export default Custom404;
+}
