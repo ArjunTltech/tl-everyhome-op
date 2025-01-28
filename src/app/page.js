@@ -24,7 +24,7 @@ export default function IndexOnePage() {
             <NavOnePage />
             {/* hero section */}
             <section className="bg-half-170 pb-lg-0 pb-md-4 d-table w-100" style={{ backgroundImage: "url('/images/bg/apps.jpg')", backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} id="home">
-                <div className="bg-overlay bg-gradient-primary opacity-9"></div>
+                <div className="bg-overlay bg-gradient-primary opacity-7"></div>
                 <div className="container">
                     <div className="row position-relative" style={{ zIndex: '1' }}>
                         <div className="col-md-7 col-12 mt-lg-5">
