@@ -68,7 +68,7 @@ const ServiceUnavailableError = () => {
 
         <div className="mt-3 text-white-50" style={{ fontSize: '0.9rem' }}>
           Need immediate assistance? Contact our {' '}
-          <Link href="/support" className="text-white text-decoration-underline">
+          <Link href="http://connect.tltechnologies.net" className="text-white text-decoration-underline">
             technical team
           </Link>
         </div>

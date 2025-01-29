@@ -74,8 +74,8 @@ const ForbiddenError=() =>{
           <div className="mt-4 contact-support">
             <p className="mb-0" style={{ fontSize: "0.9rem" }}>
               Need help? Reach out to our support team at 
-              <a href="mailto:support@example.com" className="text-white ms-1">
-                support@gmail.com
+              <a href="mailto:info@tltechnologies.net" className="text-white ms-1">
+              info@tltechnologies.net
               </a>
             </p>
           </div>
