@@ -89,7 +89,7 @@ export default function BadRequest() {
             <p className="mb-0 fs-6">
               If you believe this is a mistake, please contact our{' '}
               <a 
-                href="mailto:support@example.com" 
+                href="mailto:info@tltechnologies.net" 
                 className="text-decoration-none text-light"
                 style={{ borderBottom: '1px dotted #f8f9fa' }}
               >
