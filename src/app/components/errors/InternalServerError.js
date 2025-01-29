@@ -7,14 +7,14 @@ export default function InternalServerError() {
       fluid
       className="min-vh-100 d-flex flex-column justify-content-center align-items-center"
       style={{
-        backgroundColor: '#FFFFFF', 
+        backgroundColor: '#FFFFFF',
       }}
     >
 
       <Row className="mb-4">
         <Col className="text-center">
           <img
-            src="/images/error/interner500.jpg" 
+            src="/images/error/interner500.jpg"
             alt="500 Error Illustration"
             className="img-fluid"
             style={{ maxWidth: '400px' }}
