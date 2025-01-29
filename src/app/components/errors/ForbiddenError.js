@@ -1,59 +1,87 @@
+'use client';
+
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Image from "next/image";
+import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ForbiddenError=() =>{
   return (
- <Container fluid className="d-flex align-items-center justify-content-center vh-100 bg-purple-50">
-    <Row className="text-center">
-      <Col xs={12} className="mb-4">
-        <img
-          src="/images/error/error403.jpg" 
-          alt="Forbidden Access"
-          style={{
-            width: "400px",
-            height: "400px",
-          }}
-          className="mx-auto d-block"
-        />
-      </Col>
-      <Col xs={12} className="d-flex align-items-center justify-content-center mb-4">
-        <iframe
-          src="https://lottie.host/embed/8916da24-c917-4817-9af9-fceebc746aaa/QWCx00wxDQ.lottie"
-          style={{
-            width: "50px",
-            height: "50px",
-            marginRight: "10px",
-            border: "none",
-          }}
-          title="Forbidden Animation"
-        ></iframe>
-        <h1 className="text-4xl font-weight-bold text-purple-800 m-0">
-          403 - Forbidden
-        </h1>
-      </Col>
-      <Col xs={12} className="mb-4">
-        <p className="text-purple-700" style={{ fontSize: "1.2rem" }}>
-          You don't have permission to access this resource. Please check your credentials or contact support.
-        </p>
-      </Col>
-      <Col xs={12}>
-        <a
-          href="/"
-          className="btn btn-purple text-white px-5 py-3 rounded-pill shadow-sm"
-          style={{
-            backgroundColor: "#6f42c1",
-            fontSize: "1rem",
-            fontWeight: "bold",
-            letterSpacing: "0.5px",
-          }}
-        >
-          Return Home
-        </a>
-      </Col>
-    </Row>
-  </Container>
+    <Container 
+      fluid 
+      className="d-flex align-items-center justify-content-center vh-100 p-4"
+      style={{
+        backgroundImage: "linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(/images/error/bg-1.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
+      
+      <Row className="text-center text-white">
+        <Col xs={12} className="mb-4">
+        
+          <div className="error-icon mb-4">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="100" 
+              height="100" 
+              fill="currentColor" 
+              className="bi bi-shield-lock-fill" 
+              viewBox="0 0 16 16"
+            >
+              <path 
+                fillRule="evenodd" 
+                d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915v.385a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.385A1.5 1.5 0 0 1 8 5zm3 2.5a1.5 1.5 0 0 1-3 0v-.385a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v.385z"
+              />
+            </svg>
+          </div>
+          
+          <h1 className="display-4 fw-bold mb-3" style={{ letterSpacing: "1.5px" }}>
+            403 - Access Forbidden
+          </h1>
+          
+          <p className="lead mb-4" style={{ fontSize: "1.25rem", fontWeight: 300 }}>
+            Authorization Required. You don't have permission to view this page using the credentials you provided.
+          </p>
+          
+          <div className="reasons-list mb-4 mx-auto" style={{ maxWidth: "500px" }}>
+          <p className="text-white mb-2 fw-semibold text-uppercase" style={{ letterSpacing: "1px" }}>
+    Possible Reasons :
+  </p>
+            <ul className="list-unstyled d-flex justify-content-center flex-wrap">
+              <li className="m-2">• Incorrect permissions</li>
+              <li className="m-2">• Expired session</li>
+              <li className="m-2">• Restricted IP address</li>
+            </ul>
+          </div>
+        </Col>
+
+        <Col xs={12}>
+          <Button 
+            href="/" 
+            variant="light" 
+            size="lg" 
+            className="rounded-pill px-5 py-3 fw-bold text-primary"
+            style={{
+              transition: "all 0.3s ease",
+              boxShadow: "0 4px 15px rgba(255, 255, 255, 0.2)"
+            }}
+          >
+            Return to Homepage
+          </Button>
+          
+          <div className="mt-4 contact-support">
+            <p className="mb-0" style={{ fontSize: "0.9rem" }}>
+              Need help? Reach out to our support team at 
+              <a href="mailto:support@example.com" className="text-white ms-1">
+                support@gmail.com
+              </a>
+            </p>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 export default ForbiddenError;
