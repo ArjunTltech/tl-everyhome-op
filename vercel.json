@@ -1,0 +1,29 @@
+{
+    "routes": [
+      {
+        "src": "/400",
+        "dest": "/src/app/components/errors/BadRequestError.js"
+      },
+      {
+        "src": "/401",
+        "dest": "/src/app/components/errors/UnauthorizedError.js"
+      },
+      {
+        "src": "/403",
+        "dest": "/src/app/components/errors/ForbiddenError.js"
+      },
+      {
+        "src": "/500",
+        "dest": "/src/app/components/errors/InternalServerError.js"
+      },
+      {
+        "src": "/503",
+        "dest": "/src/app/components/errors/ServiceUnavailableError.js"
+      }
+    ],
+    "errorPages": {
+      "404": "/src/app/not-found.js",
+      "500": "/src/app/components/errors/InternalServerError.js"
+    }
+  }
+  
